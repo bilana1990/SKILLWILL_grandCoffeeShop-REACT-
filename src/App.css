@@ -1,0 +1,120 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #3e8e41;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+h4 {
+  color: #666;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3e8e41;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.coffee-item, .ingredient-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+
+.coffee-item:hover, .ingredient-item:hover {
+  transform: scale(1.05);
+}
+
+.coffee-item h3, .ingredient-item h4 {
+  font-size: 1.2rem;
+}
+
+.coffee-item p, .ingredient-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* src/App.css (Responsive Design) */
+@media (max-width: 768px) {
+  header {
+    text-align: left;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .coffee-item, .ingredient-item {
+    margin: 10px;
+  }
+
+  .coffee-item h3, .ingredient-item h4 {
+    font-size: 1.3rem;
+  }
+
+  .coffee-item p, .ingredient-item p {
+    font-size: 0.9rem;
+  }
+}
